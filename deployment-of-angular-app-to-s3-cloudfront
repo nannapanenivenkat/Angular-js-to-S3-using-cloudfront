@@ -9,9 +9,24 @@
 - Node.js and Angular CLI
 - AWS account
 
+## initial steps
+1. download Node.js (https://nodejs.org/en)
+2. create new folder in desired location
+3. go into desired folder ( ex: c:/user/venka> )
+4. set angualr cli with ( npm install -g @angular/cli )
+5. choose stylesheet  ( SCSS   [ https://sass-lang.com/documentation/syntax#scss )
+
+## step by step commands
+
+1. npm install -g @angular/cli
+2. ng new demo-angular-app
+3. ng serve --open
+4. ng build
+
 ## Steps
 
 1. Create a new Angular project using `ng new <app-name>`
+1.1 go into the <app-name> (ex: c:/user/venkat/<app-name>
 2. Run the app locally using `ng serve --open`
 3. Create a new S3 bucket, and keep public access turned off.
 4. Build the Angular app using `ng build`

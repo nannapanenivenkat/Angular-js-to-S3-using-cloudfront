@@ -1,0 +1,29 @@
+# Deploying an Angular App to S3 with CloudFront
+
+## Architecture
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21ce3eff-3a7a-42d8-9372-d9179060931f/Untitled.png)
+
+## Pre-requisites
+
+- Node.js and Angular CLI
+- AWS account
+
+## Steps
+
+1. Create a new Angular project using `ng new <app-name>`
+2. Run the app locally using `ng serve --open`
+3. Create a new S3 bucket, and keep public access turned off.
+4. Build the Angular app using `ng build`
+5. Upload published content in the S3 bucket.
+6. Create a CloudFront distribution.
+7. Add error pages to handle 404 and 403 error codes for dynamic routes.
+8. Verify the Angular app using the CloudFront URL.
+9. That’s all 🙂
+
+## References
+
+- [Angular - Setting up the local environment and workspace](https://angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)
+- [Using a REST API endpoint as the origin, with access restricted by an OAC or an OAI (legacy)](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/)
+- [Amazon CloudFront launches Origin Access Control (OAC)](https://aws.amazon.com/about-aws/whats-new/2022/08/amazon-cloudfront-origin-access-control/)
+
